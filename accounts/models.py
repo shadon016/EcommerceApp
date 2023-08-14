@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 state_choices=(
     ('Dhaka','Dhaka'),
     ('Chittagong','Chittagong'),
-('Sylhet','Sylhet'),
+    ('Sylhet','Sylhet'),
     ('Khulna','Khulna'),
-('Rajshahi','Rajshahi'),
+    ('Rajshahi','Rajshahi'),
     ('Rangpur','Rangpur'),
 
 )

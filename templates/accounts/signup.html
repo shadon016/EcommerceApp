@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sign In{% endblock %}
+{% block content %}
+<div class="flex justify-center items-center container mx-auto">
+    <div class="w-1/2 flex flex-col justify-center items-center">
+        <h3>create your account</h3>
+        <form action="" method="POST" class="flex flex-col justify-center items-start">
+            {% csrf_token %}
+            <label class="label">username</label>
+            <input type="text" placeholder="username " name="username" id="username" required class="input" />
+            <label for="email" class="label">email</label>
+            <input type="email" placeholder="email " name="email" id="email" required class="input " />
+            <label for="password1" class="label">password</label>
+            <input type="password" placeholder="password1" name="password1" id="password1" required class="input" />
+            <label for="password2" class="label">password</label>
+            <input type="password" placeholder="password2" name="password2" id="password2" required class="input" />
+            <input type="submit" value="sign In" class="" />
+        </form>
+    </div>
+    <div class="w-1/2 flex justify-start items-center invisible md:visible">
+        <div>
+            <img src=""/>
+        </div>
+    </div>
+</div>
+    {% endblock %}
