@@ -19,5 +19,8 @@ class Profile(models.Model):
     city=models.CharField(max_length=20)
     town=models.CharField(max_length=20)
     zip_code=models.CharField(max_length=10)
-    phone=models.IntegerField(max_length=15)
+    phone=models.IntegerField()
     updated_at=models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.user
